@@ -1,0 +1,5 @@
+FROM clickhouse/clickhouse-server:25.5.6
+COPY common/clickhouse/config.xml /etc/clickhouse-server/config.xml
+COPY common/clickhouse/users.xml /etc/clickhouse-server/users.xml
+COPY common/clickhouse/custom-function.xml /etc/clickhouse-server/custom-function.xml
+COPY common/clickhouse/cluster.xml /etc/clickhouse-server/config.d/cluster.xml
